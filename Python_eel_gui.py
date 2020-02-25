@@ -55,7 +55,6 @@ def main():
                 count = 0
             global eel_list
             eel_list = []
-            #usb_ports_gui.gui(self,list_)
             for i in list_:
                 temp_list = []
                 concat = ""
@@ -80,11 +79,10 @@ def main():
 
 @eel.expose
 def py_close():
-    print("I'm exit")
     exit()
 
 def keyboardInterruptHandler(signal, frame):
-    print("KeyboardInterrupt")
+    print("KeyboardInterrupt occured")
     eel.window_close()
 
 signal.signal(signal.SIGINT, keyboardInterruptHandler)
