@@ -1,3 +1,3 @@
 # Py_EelGui
 
-It is execute any selected python code and display Output in desktop gui 
+Its live displaying device name and port Id which currently connected with your host
